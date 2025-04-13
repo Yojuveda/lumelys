@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenamiento Deportivo - Lumelys</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🏋️‍♂️ Entrenamiento Deportivo</h1>
+        <p>Planes personalizados y asesoría profesional para mejorar tu rendimiento.</p>
+    </header>
+
+    <section>
+        <h2>📌 Servicios Disponibles</h2>
+        <ul>
+            <li>✅ Diseños de macro ciclos de entrenamientos grupales con atención individualizada a los ciclistas estratégicos del equipo.</li>
+            <li>✅ Diseños de macro ciclos de entrenamientos personalizados.</li>
+            <li>✅ Asesorías para ciclistas aficionados y cicloturistas.</li>
+            <li>✅ Análisis de datos enviados utilizando la plataforma Golden Cheetah.</li>
+            <li>✅ Diseños de entrenamientos semanales con uso de potenciómetro, pulsómetro y medición de cadencia.</li>
+            <li>✅ Planificación estratégica de la temporada ciclista.</li>
+            <li>✅ Evaluaciones mensuales de rendimiento deportivo y ajustes metodológicos.</li>
+            <li>✅ Creación de respuestas metodológicas a errores detectados en el entrenamiento.</li>
+        </ul>
+    </section>
+
+    <section id="entrenador">
+        <h2>🏆 Conoce a tu Entrenador</h2>
+        <p><strong>Maurice Lázaro Espinosa Varela</strong> - Entrenador con amplia experiencia en ciclismo de alto rendimiento.</p>
+        <p>Licenciado en Cultura Física y con formación en Rehabilitación Física.</p>
+        <p>Especialista en análisis de rendimiento y planificación de entrenamientos a nivel profesional.</p>
+    </section>
+
+    <select id="language-selector" onchange="changeLanguage()">
+        <option value="es">🇪🇸 Español</option>
+        <option value="en">🇺🇸 English</option>
+    </select>
+
+    <script>
+        function changeLanguage() {
+            var lang = document.getElementById("language-selector").value;
+            if (lang === "es") {
+                window.location.href = "entrenamiento_es.html";
+            } else {
+                window.location.href = "entrenamiento_en.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
